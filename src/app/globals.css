@@ -1,0 +1,50 @@
+/*
+ * Global CSS: laddar Tailwind och definierar appens färger.
+ *
+ * Färgerna är tokens (t.ex. --surface) med ett värde för ljust och ett för mörkt läge.
+ * Komponenterna använder bara tokens (bg-surface, text-muted …), så mörkt läge fungerar automatiskt.
+ */
+@import "tailwindcss";
+
+/* Lugn, varm palett – ljust läge. */
+:root {
+  --background: #f7f6f2;
+  --surface: #ffffff;
+  --surface-hover: #efeee9;
+  --foreground: #1f2a2e;
+  --muted: #5b6b70;
+  --border: #e2e0d8;
+  --accent: #2f7d73;
+  --accent-soft: #e0f0ec;
+  --accent-strong: #1f5c54;
+  --on-accent: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #12181a;
+    --surface: #1a2225;
+    --surface-hover: #232d31;
+    --foreground: #e6ecec;
+    --muted: #9aabad;
+    --border: #2c383c;
+    --accent: #5fb3a7;
+    --accent-soft: #1d3a36;
+    --accent-strong: #8fd3c8;
+    --on-accent: #0c1213;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-strong: var(--accent-strong);
+  --color-on-accent: var(--on-accent);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
