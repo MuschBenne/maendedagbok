@@ -1,3 +1,11 @@
+/**
+ * Proxy: körs på servern före varje sidladdning, innan sidan renderas.
+ *
+ * 1. Skapar en ny slumpad nonce för just den här requesten.
+ * 2. Bygger CSP-headern som säger att bara skript med den noncen får köras.
+ * 3. Skickar headern vidare till Next.js (som sätter noncen på sina egna skript)
+ *    och tillbaka till webbläsaren (som upprätthåller reglerna).
+ */
 import { NextResponse, type NextRequest } from "next/server";
 import { buildCsp, generateNonce } from "@/lib/security/csp";
 

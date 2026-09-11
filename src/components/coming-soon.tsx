@@ -1,3 +1,8 @@
+/**
+ * Platshållare för sidor som inte är byggda än.
+ *
+ * Visar sidans rubrik och i vilket steg den byggs. Tas bort när sista platshållaren ersatts.
+ */
 export function ComingSoon({ title, step }: { title: string; step: number }) {
   return (
     <section className="rounded-2xl border border-border bg-surface p-6">

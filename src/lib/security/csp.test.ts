@@ -1,3 +1,9 @@
+/**
+ * Tester för csp.ts.
+ *
+ * Kontrollerar att produktionsreglerna är strikta (bara skript med nonce, ingen eval)
+ * och att lättnaderna för utveckling bara gäller i dev.
+ */
 import { describe, expect, it } from "vitest";
 import { buildCsp, generateNonce } from "./csp";
 

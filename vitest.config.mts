@@ -1,3 +1,9 @@
+/**
+ * Vitest-konfiguration: hur `npm test` hittar och kör testerna.
+ *
+ * Testerna ligger i *.test.ts-filer under src/ och tests/, körs i Node (inte i en webbläsare),
+ * och @/ pekar på src/ precis som i appen.
+ */
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitest/config";
 

@@ -1,3 +1,6 @@
+// TypeScript-konfiguration: hur strikt typkontrollen är och hur importer löses upp.
+//
+// "strict" slår på alla säkerhetskontroller, och "paths" gör att @/ pekar på src/.
 {
   "compilerOptions": {
     "target": "ES2017",

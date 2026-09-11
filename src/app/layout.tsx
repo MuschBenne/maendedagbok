@@ -1,3 +1,10 @@
+/**
+ * Rotlayout: ramen runt alla sidor.
+ *
+ * Sätter <html lang="sv">, typsnitt, sidhuvud med menyn och en centrerad innehållsyta.
+ * Här finns också metadata (titel, noindex) och tvång på dynamisk rendering,
+ * så att CSP-noncen från proxy.ts blir ny för varje request.
+ */
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { connection } from "next/server";

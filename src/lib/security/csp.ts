@@ -1,8 +1,12 @@
 /**
- * Bygger Content-Security-Policy-headern. Anropas från proxy.ts med en ny
- * nonce för varje request, så att bara skript som Next.js själv lägger in
- * på sidan får köras. Injicerade skript (XSS) saknar nonce och blockeras.
+ * Content-Security-Policy (CSP): regler till webbläsaren om vad sidan får ladda och köra.
+ *
+ * Här byggs regelsträngen och den slumpade nonce (engångskod) som proxy.ts använder.
+ * Poängen: om någon lyckas smyga in ett eget <script> på sidan (XSS) saknar det
+ * rätt nonce, och webbläsaren vägrar köra det.
  */
+
+/** Bygger CSP-headern för en request. `isDev` lättar på reglerna lokalt. */
 export function buildCsp(nonce: string, isDev: boolean): string {
   const directives = [
     "default-src 'self'",

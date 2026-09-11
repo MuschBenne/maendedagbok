@@ -1,3 +1,9 @@
+/**
+ * ESLint-konfiguration: regler som `npm run lint` kontrollerar koden mot.
+ *
+ * Använder Next.js rekommenderade regler (React, hooks, prestanda, TypeScript)
+ * och hoppar över genererade filer som .next/.
+ */
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";

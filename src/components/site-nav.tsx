@@ -1,3 +1,9 @@
+/**
+ * Huvudmenyn i sidhuvudet.
+ *
+ * Visar länkarna och markerar sidan man står på. Det är en klientkomponent
+ * eftersom den läser den aktuella URL:en i webbläsaren (usePathname).
+ */
 "use client";
 
 import Link from "next/link";

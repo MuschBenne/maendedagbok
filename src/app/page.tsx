@@ -1,3 +1,9 @@
+/**
+ * Översikt (/): startsidan.
+ *
+ * Just nu två stora genvägar: logga dagens mående och logga en panikattack.
+ * Dagens status och en minigraf läggs till i steg 6.
+ */
 import Link from "next/link";
 
 export default function OverviewPage() {

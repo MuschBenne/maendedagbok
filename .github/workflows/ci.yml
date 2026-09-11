@@ -1,3 +1,7 @@
+# CI: körs på GitHub vid varje PR och varje push till main.
+#
+# Installerar beroenden och kör samma kontroller som lokalt: lint, typer, tester
+# och ett produktionsbygge. Misslyckas något steg blir PR:en röd.
 name: CI
 
 on:

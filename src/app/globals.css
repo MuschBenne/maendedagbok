@@ -1,7 +1,12 @@
+/*
+ * Global CSS: laddar Tailwind och definierar appens färger.
+ *
+ * Färgerna är tokens (t.ex. --surface) med ett värde för ljust och ett för mörkt läge.
+ * Komponenterna använder bara tokens (bg-surface, text-muted …), så mörkt läge fungerar automatiskt.
+ */
 @import "tailwindcss";
 
-/* Lugn, varm palett. Komponenterna använder bara dessa tokens (bg-surface, text-muted …),
-   så mörkt läge fungerar automatiskt. */
+/* Lugn, varm palett – ljust läge. */
 :root {
   --background: #f7f6f2;
   --surface: #ffffff;

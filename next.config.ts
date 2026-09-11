@@ -1,6 +1,12 @@
+/**
+ * Next.js-konfiguration.
+ *
+ * Här sätts säkerhetsheaders som skickas med varje svar: tvinga https, förbjud
+ * inbäddning i andra sajter, läck aldrig URL:en vidare och be sökmotorer att inte indexera.
+ * CSP sätts inte här utan i src/proxy.ts, eftersom den innehåller en ny nonce per request.
+ */
 import type { NextConfig } from "next";
 
-// CSP sätts per request i src/proxy.ts eftersom den behöver en nonce.
 const securityHeaders = [
   { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains" },
   { key: "X-Frame-Options", value: "DENY" },
