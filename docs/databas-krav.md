@@ -53,6 +53,10 @@ Så här översätter mysql2 värden med inställningarna i `src/db/pool.ts`:
 
 ## Vad som ska sparas
 
+ER-diagrammet över allt nedan finns i [`er-diagram.png`](er-diagram.png).
+
+![ER-diagram för måendedagboken](er-diagram.png)
+
 ### Användare (steg 3)
 
 - **Användarnamn:** unikt, högst 50 tecken. Kommer alltid med små bokstäver.
