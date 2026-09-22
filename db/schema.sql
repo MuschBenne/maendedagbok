@@ -1,0 +1,5 @@
+-- Databasschemat för Måendedagbok. DIN FIL: här skriver du alla CREATE TABLE.
+--
+-- Vilka tabeller som behövs och vilka regler som gäller står i docs/databas-krav.md.
+-- `npm run test:db` kör filen i en tom testdatabas före varje testkörning, så den
+-- ska gå att köra från början till slut i en tom databas.
