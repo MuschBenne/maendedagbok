@@ -57,6 +57,12 @@ ER-diagrammet över allt nedan finns i [`er-diagram.png`](er-diagram.png).
 
 ![ER-diagram för måendedagboken](er-diagram.png)
 
+Tabelldiagrammet i [`tabelldiagram.png`](tabelldiagram.png) visar samma modell översatt till tabeller
+och normaliserad till 3NF. Det flervärda attributet `symptoms` har blivit en egen tabell,
+`panic_attack_symptoms`, med en rad per symtom och attack.
+
+![Tabelldiagram för måendedagboken](tabelldiagram.png)
+
 ### Användare (steg 3)
 
 - **Användarnamn:** unikt, högst 50 tecken. Kommer alltid med små bokstäver.
